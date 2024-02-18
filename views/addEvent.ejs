@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ADD AN EVENT</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/9d595d1bf3.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/css/addEvent.css">
+</head>
+
+<body>
+  <section class="top-nav">
+    <div class="logo">
+      <a href="index.html"><img class="logo-img" src="../images/logo1.jpg"></a>
+      <label class="logo-text">BlueLock</label>
+    </div>
+  </section>
+
+  <nav class="left-nav">
+    <ul>
+      <li><a href="dashBoard" class="nav-link">HOME</a></li>
+      <li><a href="allEvents" class="nav-link">ALL EVENTS</a></li>
+      <li><a href="addEvent" class="nav-link">ADD EVENTS</a></li>
+      <li><a href="#" class="nav-link">ABOUT</a></li>
+      <li><a href="adminDashboard" class="nav-link">LOGOUT</a></li>
+    </ul>
+  </nav>
+
+  <section class="sectionCourse" aria-label="recent post">
+    <div class="container">
+      <div class="title-wrapper">
+        <h2 class="h2 section-title">Add an <strong class="strong" style="display: inline;">EVENT </strong></h2>
+      </div>
+      <ul class="grid-list">
+        <form action="/uploadEvent" method="POST">
+          <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+          <input type="text" value="" name="EventImg" placeholder="Event Image URL">
+          <input type="text" name="EventTitle" value="" placeholder="Event Title">
+          <textarea name="content" placeholder="Event Description" minlength="10"></textarea>
+          <input type="text" name="EventLocation" placeholder="Event Venue">
+          <input type="text" name="EventMemebers" placeholder="Event Capacity">
+          <label class="last" for="EventStartDate">Event Start Date</label>
+          <input type="date" value="" name="EventStartDate" placeholder="Event Start Date" >
+          <br>
+          <label class="last" for="EventTime">Event Time&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+          <input class="la" type="time" value="" name="EventTime"  placeholder="Event Time">
+          <br>
+          <label class="last" for="EventEnd">Event End Date&nbsp;&nbsp;</label>
+          <input  type="date" value="" name="EventEndDate" >
+          <div class="card-content">
+            <input type="submit" value="ADD EVENT"> 
+          </div>
+        </form>
+      </ul>
+    </div>
+  </section>
+
+  <footer></footer>
+</body>
+
+</html>

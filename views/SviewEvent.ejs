@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Details</title>
+    <link rel="stylesheet" href="/css/viewEvent.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Event Details</h1>
+
+        <div class="event-details">
+            <div>
+                <h2><%= eventCont.eventTitle %></h2>
+        
+                <img src="<%= eventCont.eventImg %>" alt="">
+            </div>
+
+            <div>
+                <h2>Description</h2>
+                <p><%= eventCont.eventDesc %></p>
+
+                <h2>Venue</h2>
+                <p><%= eventCont.eventVenue %></p>
+
+                <h2>Date and Time</h2>
+                <p>Start Date: <%= eventCont.eventStartDate %><br>
+                    End Date: <%= eventCont.eventEndDate %><br>
+                    Time: <%= eventCont.eventTime %></p>
+            </div>
+
+        </div>
+
+        <div class="back-button">
+            <a href="/allEvents">Back</a> 
+        </div>
+       <div class="back-button">
+        <% if (hex==1) { %>
+            <a href="/unRegister?eventId=<%= eventId %>"><button class="add-topic">Un Register Event</button></a>
+        <%} else {%> 
+                <% if (flag==0) { %>
+                    <a href="/registerEvent?eventId=<%= eventId %>"><button class="add-topic">Register Event</button></a>
+                <% } else{ %>
+                    <button class="add-topic" disabled>Registration Closed</button>
+                <%}%>
+        <%}%>
+        </div>
+    </div>
+
+</body>
+
+</html>

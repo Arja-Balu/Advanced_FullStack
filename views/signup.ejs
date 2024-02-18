@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+                
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/css/studentSignup.css">
+                        
+</head>
+    <body>
+        <div class="container">
+            <div class="form login">
+                <div class="form-content">
+                    <header>Admin Signup</header>
+                    <form method="POST" action="/signupSubmit">
+                        <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+                        <div class="field input-field">
+                            <input type="text" placeholder="FirstName" name="firstName" class="input">
+                        </div>
+                    <div class="field input-field">
+                        <input type="text" placeholder="LastName" name="lastName" class="input">
+                    </div>
+                        <div class="field input-field">
+                            <input type="email" placeholder="Email" name="email" class="input">
+                        </div>
+
+                        <div class="field input-field">
+                            <input type="password" placeholder="Password" name="password" class="password">
+                            <i class='bx bx-hide eye-icon'></i>
+                        </div>
+
+                        <div class="field input-field">
+                            <input type="password" placeholder="Confirm password" name="confirmPassword" class="password">
+                            <i class='bx bx-hide eye-icon'></i>
+                        </div>
+           
+                        <div class="field button-field">
+                            <button>Signup</button>
+                        </div>
+                    </form>
+
+                    <div class="form-link">
+                        <span>Already have an account? <a href="login" class="link signup-link" >Login</a></span>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <!-- JavaScript -->
+        <script src="js/script.js"></script>
+    </body>
+</html>
+</body>
+</html>

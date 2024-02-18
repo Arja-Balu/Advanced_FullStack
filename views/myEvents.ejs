@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MY EVENTS</title>
+  <link rel="stylesheet" href="/css/allEvents.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <script src="https://kit.fontawesome.com/9d595d1bf3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <nav class="top-nav">
+    <div class="logos">
+      <a href="index.html">
+        <img class="logo-img" src="../images/logo1.jpg">
+        <span class="logo-text">BlueLock</span>
+      </a>
+    </div>
+    <ul>
+      <li class="link"><a class="anc" href="dashBoard">HOME</a></li>
+      <li class="link"><a class="active anc" href="allEvents">ALL EVENTS</a></li>
+      <li class="link"><a class="anc" href="addEvent">ADD EVENT</a></li>
+      <li class="link"><a class="anc" href="login">LOGOUT</a></li>
+    </ul>
+  </nav>
+  
+  <h1 class="title-name">My Events</h1>
+  <% console.log("formattedData:", formattedData); %>
+  <ul class="event-list">
+    <% formattedData.forEach(event => { %>
+      <% console.log("event:", event); %>
+      <% if (event && event.eventImg) { %>
+        <li class="event-item">
+          <img src="<%= event.eventImg %>" alt="Event Image" class="event-image">
+          <h2 class="event-title"><%= event.eventTitle %></h2>
+          <a href="/viewEvent?eventId=<%= encodeURIComponent(event.id) %>">
+            <button class="add-topic">View Event</button>
+          </a>
+        </li>
+      <% } %>
+    <% }); %>
+  </ul>
+</body>
+</html>
