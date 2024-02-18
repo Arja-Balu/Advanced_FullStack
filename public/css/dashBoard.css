@@ -1,0 +1,72 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-image: url('../images/bluelock.jpg'); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+nav {
+  background: rgba(0, 0, 0, 0.5); 
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  z-index: 999;
+}
+
+.logos {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.logo {
+  font-size: 24px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; 
+  list-style-type: none;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  color: #ffffff;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.center-text {
+  text-align: center;
+  font-size: 150px;
+  color: rgba(255, 255, 255, 0.8); 
+  height: 100px;
+}

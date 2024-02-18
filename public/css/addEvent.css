@@ -1,0 +1,109 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-image: url('/images/football.png');
+  background-size: cover; 
+  background-position: center;
+  color: #ffffff;
+}
+
+.top-nav {
+  background: #212121;
+  height: 60px;
+  padding: 10px 20px;
+}
+
+.top-nav .logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.logo-text {
+  font-size: 24px;
+}
+
+.left-nav {
+  background-color: #333333;
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  overflow-y: auto;
+}
+
+.left-nav ul {
+  padding-top: 20px;
+}
+
+.left-nav .nav-link {
+  display: block;
+  color: #ffffff;
+  font-size: 18px;
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+}
+
+.left-nav .nav-link:hover {
+  background-color: #555555;
+}
+
+.sectionCourse {
+  padding: 20px;
+}
+
+.section-title {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.grid-list {
+  list-style: none;
+}
+
+.grid-list form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.grid-list input,
+.grid-list textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #424242;
+  color: #ffffff;
+}
+
+.grid-list input[type="submit"] {
+  cursor: pointer;
+  background-color: #009688;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+}
+
+.grid-list input[type="submit"]:hover {
+  background-color: #00796b;
+}
+.event-image{
+  width: 30px;
+  height: 40px;
+}

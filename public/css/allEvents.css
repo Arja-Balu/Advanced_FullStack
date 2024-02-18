@@ -1,0 +1,105 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-image: url('/images/basketball.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  color: #ffffff;
+}
+
+.top-nav {
+  background: #212121;
+  height: 60px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logos {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.logo-text {
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.top-nav ul {
+  display: flex;
+}
+
+.top-nav .link {
+  margin-right: 20px;
+}
+
+.top-nav .link a {
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.top-nav .link a.active {
+  font-weight: bold;
+}
+
+.event-section {
+  padding: 20px;
+}
+
+.title-name {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.event-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+.event-item {
+  background-color: #333333;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.event-image {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.event-title {
+  color: #ffffff;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.add-topic {
+  cursor: pointer;
+  background-color: #009688;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+.add-topic:hover {
+  background-color: #00796b;
+}

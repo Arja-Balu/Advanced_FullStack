@@ -1,0 +1,89 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('../images/background.png');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(33, 31, 31, 0.8);
+    color: #fff;
+}
+
+.container {
+    max-width: 800px;
+    background-color: #333;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+}
+
+.event-details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.event-details div {
+    flex: 1;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.event-details div:first-child {
+    margin-right: 15px;
+}
+
+img {
+    max-width: 300px;
+    height: 300px;
+    border-radius: 8px;
+}
+
+h2 {
+    color: #fff;
+}
+
+p {
+    color: #bbb; 
+}
+
+.back-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #4caf50;
+}
+
+button.add-topic {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button.add-topic:hover {
+    background-color: #45a049;
+}
+
+button.add-topic:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
